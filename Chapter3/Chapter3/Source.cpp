@@ -10,6 +10,81 @@ using std::vector;
 using std::cin;
 
 int main() {
+//3.43
+	constexpr size_t row = 3;
+	constexpr size_t col = 4;
+	int ia[row][col];
+	int v = 1;
+	for (auto& r : ia) {
+		for (auto& c : r) {
+			c = v;
+			v++;
+		}
+	}
+////a
+	//for (auto &r : ia) {
+	//	for (auto &c : r) {
+	//		cout << c << " ";
+	//	}
+	//	cout << endl;
+	//}
+////b
+	//for (auto i = ia; i != std::end(ia); i++) {
+	//	for (auto j = *i; j != *i + col; j++) {
+	//		cout << *j << " ";
+	//	}
+	//	cout << endl;
+	//}
+
+//3.42
+	//vector<int> v(10, 2);
+	//int c[10];
+	//for (auto i : v) {
+	//	for (auto j = std::begin(c); j != std::end(c); j++) {
+	//		*j = i;
+	//	}
+	//}
+	//for (auto i : c) {
+	//	cout << i;
+	//}
+
+//3.41
+	//int c[] = { 0,1,2,3,4 };
+	//vector<int> v(std::begin(c), std::end(c));
+	//for (auto i : v) {
+	//	cout << i;
+	//}
+
+//3.40
+	//char one[] = "Hi";
+	//char two[] = "Hello";
+	//char three[20];
+	//strcpy_s(three, one);
+	//strcat_s(three, two);
+	//for (auto i : three) {
+	//	cout << i;
+	//}
+
+//3.39b
+	//const char one[] = { 'H','e','l','l','o','\0'};
+	//const char two[] = "Hello";
+	//if (strcmp(one, two) == 0) {
+	//		cout << "the same" << endl;
+	//}
+	//else {
+	//	cout << "different" << endl;
+	//}
+//3.39a
+	//const string one = "Hello";
+	//const string two = "World";
+	//if (one == two) {
+	//	cout << "the same" << endl;
+	//}
+	//else {
+	//	cout << "different" << endl;
+	//}
+
+
 //3.36
 	//constexpr size_t n = 3;
 	//constexpr size_t m = 4;
